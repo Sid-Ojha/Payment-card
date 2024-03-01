@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.logo img{
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.card{
+    width: 320px;
+    height: 410px;
+    background-color: white;
+    border-radius: 20px;
+   
+}
+.qr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.methods{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card_bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width:666px){
+    .image2{
+        opacity: 0;
+    }
+    .image1{
+        opacity: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
